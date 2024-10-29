@@ -406,3 +406,56 @@ li {
 
   /* aaa */
 }
+
+@media screen and (max-width: 768px) {
+  .Header {
+    height: 54px;
+    padding-left: 10px;
+  }
+
+  .PageTitle {
+    font-size: 48px;
+  }
+
+  .HeaderMenu {
+    display: none;
+  }
+
+  .LoadedMain {
+    margin-top: 54px;
+  }
+
+  .HomeTitle {
+    left: 10px;
+  }
+
+  .worktitle {
+    left: 10px;
+    bottom: 5px;
+  }
+
+  .CategoryWrapper {
+    margin-left: 2%;
+    margin-right: 5%;
+  }
+
+  .DivTitle {
+    font-size: 40px;
+  }
+
+  .DivSecondTitle {
+    font-size: 32px;
+  }
+
+  .WorkTileContainer {
+    gap: 5px;
+  }
+
+  .WorkTileTitle {
+    font-size: 20px;
+  }
+
+  .SkillsWrapper {
+    display: grid;
+  }
+}

@@ -85,9 +85,6 @@ export default function Home() {
             
         </div>
         <div className="CategoryWrapper">
-              <p className="DivTitle">LOREM IPSUM</p>
-        </div>
-        <div className="CategoryWrapper">
               <p className="DivTitle">ABOUT</p>
               <p className="DivSecondTitle">REO YOSHIOKA <br />Born in 2003. <br />Currently studying at J.F.Oberlin University. </p>
               <p className="Divbodytext">{`In junior high school, interested in flight simulators, from which started repainting. Creating textures with the motto "closer to reality with natural beauty". Also, this year started modelling to bring flight simulators closer to reality.`}</p>

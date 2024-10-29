@@ -20,8 +20,8 @@ export default function Home() {
         layout='responsive'
         alt="FF B767"/>
         <div className="overlay"></div>
-          <p className="HomeTitle">Hi! I'm REO</p>
-          <p className="worktitle">I'M A <br/> TEXTURE AND 3D MODEL ARTIST<br/>FRONTEND ENGINEER<br/>FROM JAPAN </p>
+          <p className="HomeTitle">Hi! I&apos;m REO</p>
+          <p className="worktitle">I&apos;M A <br/> TEXTURE AND 3D MODEL ARTIST<br/>FRONTEND ENGINEER<br/>FROM JAPAN</p>
         </div>
         <div className="CategoryWrapper">
           <p className="DivTitle" id='works'>WORKS</p>
@@ -90,7 +90,7 @@ export default function Home() {
         <div className="CategoryWrapper">
               <p className="DivTitle">ABOUT</p>
               <p className="DivSecondTitle">REO YOSHIOKA <br />Born in 2003. <br />Currently studying at J.F.Oberlin University. </p>
-              <p className="Divbodytext">In junior high school, interested in flight simulators, from which started repainting. Creating textures with the motto "closer to reality with natural beauty". Also, this year started modelling to bring flight simulators closer to reality.</p>
+              <p className="Divbodytext">{`In junior high school, interested in flight simulators, from which started repainting. Creating textures with the motto "closer to reality with natural beauty". Also, this year started modelling to bring flight simulators closer to reality.`}</p>
               <p className="Divbodytext">In Zombie Studio A220 project, responsible for the creation of static objects.</p>
         </div>
         <TextureModal isOpen={isModalOpen} onClose={TextureClose}></TextureModal>

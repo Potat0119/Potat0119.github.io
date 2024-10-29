@@ -311,3 +311,98 @@ li {
   font-size: 20px;
   color: #444444;
 }
+
+@media screen and (max-width: 1200px) {
+  .PageTitle {
+    font-size: 3vw;
+  }
+
+  .HeaderMenu {
+    gap: 12px;
+    width: 70vw;
+  }
+
+  .HeaderMenuButton {
+    font-size: 32px;
+  }
+
+  .HomeTitle {
+    font-size: 8vw;
+  }
+
+  .worktitle {
+    font-size: 4.5vw;
+  }
+
+  .CategoryWrapper {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  .WorkTileContainer {
+    gap: 2.5vw;
+  }
+
+  .WorkTileTitle {
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    inset: auto auto 2px 4px;
+    margin-left: 0;
+    width: 34vw;
+  }
+
+  .modal-content {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96vw;
+  }
+
+  .ModalGuide {
+    font-size: 32px;
+    color: #7a7a7a;
+  }
+
+  .modal-close {
+    font-size: 32px;
+    color: #7a7a7a;
+  }
+
+  .WorkArticle {
+    display: grid;
+    position: relative;
+  }
+
+  .WorkArticle:nth-of-type(n+2) {
+    display: grid;
+  }
+
+  .ModalArticleImg {
+    max-width: 96vw;
+  }
+
+  .ModalWorkTitle {
+    font-size: 60px;
+  }
+
+  .ModalWorkDetails {
+    font-size: 32px;
+  }
+
+  .UsedSoftwareTitle {
+    font-size: 40px;
+  }
+
+  .UsedSoftware {
+    font-size: 32px;
+  }
+
+  .ModalWorkLink {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 32px;
+  }
+
+  /* aaa */
+}

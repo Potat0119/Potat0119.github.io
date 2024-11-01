@@ -1,32 +1,32 @@
 import Image from 'next/image'
 import ProgressBar from './Progress'
-import TextureModal from './TextureModal';
-import ModelModal from './ModelModal';
-import WebAppModal from './WebAppModal';
+import TextureModalJP from './JPTextureModal';
+import ModelModalJP from './JPModelModal';
+import WebAppModalJP from './JPWebAppModal';
 import { useState } from 'react';
 
-export default function Home() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isModelOpen, setIsModelOpen] = useState(false);
-  const [isWebAppOpen, setIsWebAppOpen] = useState(false);
+export default function HomeJP () {
+  const [isModalOpen, setIsModalJPOpen] = useState(false);
+  const [isModelOpen, setIsModelJPOpen] = useState(false);
+  const [isWebAppOpen, setIsWebAppJPOpen] = useState(false);
   
-  const TextureOpen = () => {
-    setIsModalOpen(true);};
+  const TextureJPOpen = () => {
+    setIsModalJPOpen(true);};
   
-    const TextureClose = () => {
-      setIsModalOpen(false);};
+    const TextureJPClose = () => {
+      setIsModalJPOpen(false);};
 
-  const ModelOpen = () => {
-    setIsModelOpen(true);};
+  const ModelJPOpen = () => {
+    setIsModelJPOpen(true);};
   
-    const ModelClose = () => {
-      setIsModelOpen(false);};
+    const ModelJPClose = () => {
+      setIsModelJPOpen(false);};
 
-  const WebAppOpen = () => {
-    setIsWebAppOpen(true);};
+  const WebAppJPOpen = () => {
+    setIsWebAppJPOpen(true);};
   
-    const WebAppClose = () => {
-      setIsWebAppOpen(false);};
+    const WebAppJPClose = () => {
+      setIsWebAppJPOpen(false);};
 
     return (
       <div className='LoadedMain'>
@@ -38,12 +38,12 @@ export default function Home() {
         alt="FF B767"/>
         <div className="overlay"></div>
           <p className="HomeTitle">Hi! I&apos;m REO</p>
-          <p className="worktitle">I&apos;M A <br/> TEXTURE AND 3D MODEL ARTIST<br/>FRONTEND ENGINEER<br/>FROM JAPAN</p>
+          <p className="worktitle">3Dモデルやテクスチャの作成、<br /> Webアプリケーションの作成を行っています</p>
         </div>
         <div className="CategoryWrapper">
           <p className="DivTitle" id='works'>WORKS</p>
           <div className="WorkTileContainer">
-            <button className="WorkTile" onClick={TextureOpen}>
+            <button className="WorkTile" onClick={TextureJPOpen}>
               <Image
               className='WorkTileImg'
               src="/images/Tile01.png" 
@@ -53,7 +53,7 @@ export default function Home() {
               alt='WorkPicture'/>
               <p className="WorkTileTitle">Textures</p>
             </button>
-            <button className="WorkTile" onClick={ModelOpen}>
+            <button className="WorkTile" onClick={ModelJPOpen}>
               <Image
               className='WorkTileImg'
               src="/images/Tile02.png" 
@@ -63,7 +63,7 @@ export default function Home() {
               alt='WorkPicture'/>
               <p className="WorkTileTitle">3D MODELS</p>
             </button>
-            <button className="WorkTile" onClick={WebAppOpen}>
+            <button className="WorkTile" onClick={WebAppJPOpen}>
               <Image
               className='WorkTileImg'
               src="/images/Tile03.png" 
@@ -103,13 +103,13 @@ export default function Home() {
         </div>
         <div className="CategoryWrapper">
               <p className="DivTitle" id='about'>ABOUT</p>
-              <p className="DivSecondTitle">REO YOSHIOKA <br />Born in 2003. <br />Currently studying at J.F.Oberlin University. </p>
-              <p className="Divbodytext">{`In junior high school, interested in flight simulators, from which started repainting. Creating textures with the motto "closer to reality with natural beauty". Also, this year started modelling to bring flight simulators closer to reality.`}</p>
-              <p className="Divbodytext">In Zombie Studio A220 project, responsible for the creation of static objects.</p>
+              <p className="DivSecondTitle">吉岡 伶旺 <br />2003年生まれ。 <br />桜美林大学在学中。</p>
+              <p className="Divbodytext">中学生のときにフライトシミュレーターに興味を持ち、リペイントを始める。「自然な美しさで現実により近く。」をモットーにテクスチャーを作成している。2024年からはモデリングも始め、よりフライトシミュレーターを現実に近づけるため日々努力している。</p>
+              <p className="Divbodytext">Zombie Studio A220 Projectでは、静的オブジェクトの作成を担当している。</p>
         </div>
-        <TextureModal isOpen={isModalOpen} onClose={TextureClose}></TextureModal>
-        <ModelModal isOpen={isModelOpen} onClose={ModelClose}></ModelModal>
-        <WebAppModal isOpen={isWebAppOpen} onClose={WebAppClose}></WebAppModal>
+        <TextureModalJP isOpen={isModalOpen} onClose={TextureJPClose}></TextureModalJP>
+        <ModelModalJP isOpen={isModelOpen} onClose={ModelJPClose}></ModelModalJP>
+        <WebAppModalJP isOpen={isWebAppOpen} onClose={WebAppJPClose}></WebAppModalJP>
       </div>
     )
   }

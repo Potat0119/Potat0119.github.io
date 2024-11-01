@@ -26,7 +26,7 @@ li {
 /* MainPage Fadein */
 @keyframes fadein {
   from {
-    opacity: 0;
+    opacity: 0.8;
   }
 
   to {
@@ -55,6 +55,17 @@ li {
 .PageTitle {
   font-size: max(2.5vw, 48px);
   font-weight: 400;
+}
+
+.HeaderMenuBlock {
+  display: flex;
+  justify-content: center;
+}
+
+.ENJPChange {
+  font-size: 24px;
+  margin-right: 20px;
+  color: #8d8d8d;
 }
 
 .HeaderMenu {
@@ -312,6 +323,77 @@ li {
   color: #444444;
 }
 
+/* Footer */
+.Footer {
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #e7e7e7;
+}
+
+.FooterTitle {
+  font-size: 28px;
+}
+
+.FooterText {
+  font-size: 22px;
+}
+
+.FooterContainer {
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.FooterInnerContainer {
+  display: flex;
+  justify-content: start;
+  gap: 10vw;
+  width: 70%;
+}
+
+.FooterProfile {
+  margin-left: 0;
+}
+
+.FooterNav {
+  display: flex;
+  justify-content: start;
+  gap: 6vw;
+}
+
+
+.SnsLogos {
+  margin-top: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+.FooterIcons {
+  justify-content: flex-end;
+}
+
+.Top {
+  display: flex;
+  justify-content: end;
+}
+
+.VercelLogo {
+  display: flex;
+  justify-content: end;
+  margin-top: 12px;
+  margin-right: 24px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 @media screen and (max-width: 1200px) {
   .PageTitle {
     font-size: 3vw;
@@ -414,7 +496,12 @@ li {
   }
 
   .PageTitle {
-    font-size: 48px;
+    font-size: 32px;
+  }
+
+  .ENJPChange {
+    font-size: 20px;
+    margin-right: 0;
   }
 
   .HeaderMenu {
@@ -440,11 +527,17 @@ li {
   }
 
   .DivTitle {
-    font-size: 40px;
+    margin-top: 10px;
+    font-size: 32px;
   }
 
   .DivSecondTitle {
-    font-size: 32px;
+    font-size: 24px;
+  }
+
+  .Divbodytext {
+    font-size: 16px;
+    text-wrap: balance;
   }
 
   .WorkTileContainer {
@@ -452,10 +545,83 @@ li {
   }
 
   .WorkTileTitle {
+    font-size: 18px;
+    text-align: left;
+    line-height: 100%;
+    margin-bottom: 2px;
+  }
+
+  .DivSectionTitle {
     font-size: 20px;
   }
 
-  .SkillsWrapper {
-    display: grid;
+  .Footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .FooterContainer {
+    margin: 0 10px;
+  }
+
+  .FooterNav {
+    display: none;
+  }
+
+  .VercelLogo {
+    display: flex;
+    justify-content: start;
+    margin-left: 10px;
+    width: 150px;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+
+  /* Modal */
+  .ModalGuide {
+    font-size: 16px;
+  }
+
+  .modal-close {
+    font-size: 16px;
+  }
+
+  .ModalTitle {
+    font-size: 32px;
+  }
+
+  .ModalYear {
+    font-size: 24px;
+  }
+
+  .ModalYearButton {
+    font-size: 18px;
+  }
+
+  .ModalWorkTitle {
+    font-size: 24px;
+    line-height: 110%;
+  }
+
+  .ModalWorkDetails {
+    font-size: 16px;
+    text-wrap: balance;
+  }
+
+  .UsedSoftwareTitle {
+    font-size: 20px;
+  }
+
+  .UsedSoftware {
+    font-size: 14px;
+  }
+
+  .ModalWorkLink {
+    position: absolute;
+    bottom: -24px;
+    font-size: 16px;
+
   }
 }

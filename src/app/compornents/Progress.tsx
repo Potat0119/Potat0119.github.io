@@ -15,11 +15,11 @@ const ProgressBar = ({ value }: {value: number}) => {
         variant="outlined"
         color="neutral"
         size="sm"
-        thickness={32}
+        thickness={24}
         value={value}
         sx={{
           '--LinearProgress-radius': '0px',
-          '--LinearProgress-progressThickness': '24px',
+          '--LinearProgress-progressThickness': '20px',
           boxShadow: 'sm',
           borderColor: 'neutral.500',
         }}

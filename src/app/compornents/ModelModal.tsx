@@ -23,6 +23,23 @@ export default function ModelModal({ isOpen, onClose}: ModelModalProps) {
         <article className="WorkArticle">
         <Image
               className='ModalArticleImg'
+              src="/images/Model2024p2.png" 
+              width={1200}
+              height={450}
+              layout='responsive'
+              alt='WorkPicture'/>
+          <div className="WorkArticleDetails">
+            <p className="ModalWorkTitle">Ka Band SATCOM Antenna</p>
+            <p className="ModalWorkDetails">Modeled and textured SATCOM Antenna for Zombie Studio A220 project. Still W.I.P. Currently textureing.</p>
+            <p className="UsedSoftwareTitle">Used Softwares</p>
+            <ul className="UsedSoftwareList">
+              <li className="UsedSoftware">Blender for Modelling</li>
+            </ul>
+          </div>
+        </article>
+        <article className="WorkArticle">
+        <Image
+              className='ModalArticleImg'
               src="/images/Model2024p1.png" 
               width={1200}
               height={450}
@@ -89,6 +106,7 @@ export default function ModelModal({ isOpen, onClose}: ModelModalProps) {
             <p className="ModalWorkDetails">My 1st 3DModel project. <br /> Modeled and textured missing TAT Probe by default on FlightFactor B767.</p>
             <p className="UsedSoftwareTitle">Used Softwares</p>
             <ul className="UsedSoftwareList">
+              <li className="UsedSoftware">Autodesk Maya for modelling</li>
               <li className="UsedSoftware">Blender for UVs</li>
             </ul>
               <a className="ModalWorkLink" href="https://forums.x-plane.org/index.php?/files/file/90734-tat-probe-for-flightfactor-b767/" target="_blank" rel="noopener noreferrer">Jump to Link</a>

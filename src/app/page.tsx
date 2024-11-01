@@ -11,7 +11,7 @@ import HomeJP from "./compornents/HomeJP";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
-  const [content, setContent] = useState<"JPPage" | "ENPage">("ENPage"); // デフォルトを英語に設定
+  const [content, setContent] = useState<"JPPage" | "ENPage">("ENPage"); 
 
   function SearchParamsComponent() {
     const searchParams = useSearchParams().get('content');
@@ -22,7 +22,7 @@ export default function App() {
       }
     }, [searchParams]);
 
-    return null; // 状態を更新するだけのコンポーネントなのでレンダリングは不要
+    return null; 
   }
 
   const toggleLanguage = () => {
@@ -35,7 +35,7 @@ export default function App() {
     }, 1000);
 
     return () => clearTimeout(timeoutId);
-  }, []); // 初回のみ実行されるように依存配列を空に
+  }, []);
 
   return (
     <div>

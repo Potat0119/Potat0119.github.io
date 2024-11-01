@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Pot4t0',
-  description: 'Pot4t0s Homepage',
+  title: 'REO YOSHIOKA',
+  description: 'REO YOSHIOKA Homepage',
 }
 
 import { Inter } from 'next/font/google'

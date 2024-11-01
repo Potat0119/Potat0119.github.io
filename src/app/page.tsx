@@ -1,6 +1,6 @@
 "use client";
 import { useSearchParams } from 'next/navigation';
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import './globals.css';
 import LoadingScreen from "./compornents/Loading";
 import Header from './compornents/Header';
@@ -39,8 +39,12 @@ export default function App() {
       ) : (
         <div>
           <Header toggleLanguage={toggleLanguage} />
-          {content === 'ENPage' && <Home />}
-          {content === 'JPPage' && <HomeJP />}
+          <Suspense fallback={<LoadingScreen />}>
+            <div>
+              {content === 'ENPage' && <Home />}
+              {content === 'JPPage' && <HomeJP />}
+            </div>
+          </Suspense>
           <Footer />
         </div>
       )}

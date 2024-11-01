@@ -1,15 +1,24 @@
 import Image from 'next/image'
 import ProgressBar from './Progress'
 import TextureModal from './TextureModal';
+import ModelModal from './ModelModal';
 import { useState } from 'react';
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModelOpen, setIsModelOpen] = useState(false);
+  
   const TextureOpen = () => {
     setIsModalOpen(true);};
   
     const TextureClose = () => {
       setIsModalOpen(false);};
+
+  const ModelOpen = () => {
+    setIsModelOpen(true);};
+  
+    const ModelClose = () => {
+      setIsModelOpen(false);};
 
     return (
       <div className='LoadedMain'>
@@ -36,7 +45,7 @@ export default function Home() {
               alt='WorkPicture'/>
               <p className="WorkTileTitle">Textures</p>
             </button>
-            <button className="WorkTile">
+            <button className="WorkTile" onClick={ModelOpen}>
               <Image
               className='WorkTileImg'
               src="/images/Tile02.png" 
@@ -91,6 +100,7 @@ export default function Home() {
               <p className="Divbodytext">In Zombie Studio A220 project, responsible for the creation of static objects.</p>
         </div>
         <TextureModal isOpen={isModalOpen} onClose={TextureClose}></TextureModal>
+        <ModelModal isOpen={isModelOpen} onClose={ModelClose}></ModelModal>
       </div>
     )
   }

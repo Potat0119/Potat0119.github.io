@@ -1,5 +1,4 @@
 import React from "react";
-import PoweredByVercel from 'powered-by-vercel'
 import Image from 'next/image'
 
 const Footer = () => {
@@ -71,8 +70,6 @@ const Footer = () => {
                     </a>
                 </div>
             </div>
-                    <PoweredByVercel className="VercelLogo" />
-                
                 <p className="copyright">Copyright &copy; 2024- REO YOSHIOKA - All Rights Reserved.</p>
         </footer>
     )

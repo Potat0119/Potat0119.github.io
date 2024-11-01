@@ -381,13 +381,6 @@ li {
   justify-content: end;
 }
 
-.VercelLogo {
-  display: flex;
-  justify-content: end;
-  margin-top: 12px;
-  margin-right: 24px;
-}
-
 .copyright {
   display: flex;
   justify-content: center;

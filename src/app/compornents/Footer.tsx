@@ -9,6 +9,7 @@ const Footer = () => {
                     <div className="FooterProfile">
                         <p className="FooterTitle">REO YOSHIOKA</p>
                         <p className="FooterText">KANAGAWA, JAPAN</p>
+                        <p className="FooterText">biz.reoyoshioka@outlook.com</p>
                         <div className="SnsLogos">
                         <a href="https://x.com/Pot4t0_0w0" className="snsbtn">
                         <Image

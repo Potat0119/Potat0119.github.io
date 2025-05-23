@@ -12,22 +12,20 @@ const Footer = () => {
                         <p className="FooterText">biz.reoyoshioka@outlook.com</p>
                         <div className="SnsLogos">
                         <a href="https://x.com/Pot4t0_0w0" className="snsbtn">
-                            <img
-                                className="XLogo"
-                                src="/images/logo-black.png"
-                                width={50}
-                                height={50}
-                                alt="X"
-                            />
-                            </a>
-                            <a href="https://www.instagram.com/pot4t0_0w0/" className="snsbtn">
-                            <img
-                                className="Instagram"
-                                src="/images/IG_Black.png"
-                                width={55}
-                                height={55}
-                                alt="Instagram"
-                            />
+                        <Image
+                        className='XLogo'
+                        src="/images/logo-black.png"
+                        width={50}
+                        height={50}
+                        alt='X'/>
+                        </a>
+                        <a href="https://www.instagram.com/pot4t0_0w0/" className="snsbtn">
+                        <Image
+                        className='Instagram'
+                        src="/images/IG_Black.png"
+                        width={55}
+                        height={55}
+                        alt='Instagram'/>
                         </a>
                         </div>
                     </div>
@@ -61,13 +59,12 @@ const Footer = () => {
                 </div>
                 <div className="FooterIcons">
                     <a href="#" className="Top">
-                    <img
-                        className="TopButton"
-                        src="/images/top.svg"
-                        width="55"
-                        height="55"
-                        alt="BackToTop"
-                        />
+                    <Image
+                    className='TopButton'
+                    src="/images/top.svg"
+                    width={55}
+                    height={55}
+                    alt='BackToTop'/>
                     </a>
                 </div>
             </div>

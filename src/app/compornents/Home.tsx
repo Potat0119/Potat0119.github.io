@@ -111,25 +111,6 @@ export default function Home() {
         <TextureModal isOpen={isModalOpen} onClose={TextureClose}></TextureModal>
         <ModelModal isOpen={isModelOpen} onClose={ModelClose}></ModelModal>
         <WebAppModal isOpen={isWebAppOpen} onClose={WebAppClose}></WebAppModal>
-        <div style={{display: 'none'}}>
-          <img src="/images/homepic.png" alt="" />
-          <img src="/images/IG_Black.png" alt="" />
-          <img src="/images/logo-black.png" alt="" />
-          <img src="/images/Model2024p1.png" alt="" />
-          <img src="/images/Model2024p2.png" alt="" />
-          <img src="/images/Model202401.png" alt="" />
-          <img src="/images/Model202402.png" alt="" />
-          <img src="/images/Model202403.png" alt="" />
-          <img src="/images/Texture202301.png" alt="" />
-          <img src="/images/Texture202401.png" alt="" />
-          <img src="/images/Texture202402.png" alt="" />
-          <img src="/images/Texture202403.png" alt="" />
-          <img src="/images/Tile01.png" alt="" />
-          <img src="/images/Tile02.png" alt="" />
-          <img src="/images/Tile03.png" alt="" />
-          <img src="/images/Web202401.png" alt="" />
-          <img src="/images/Web202402.png" alt="" />
-        </div>
       </div>
     )
   }

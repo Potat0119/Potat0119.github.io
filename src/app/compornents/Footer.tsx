@@ -14,19 +14,19 @@ const Footer = () => {
                         <a href="https://x.com/Pot4t0_0w0" className="snsbtn">
                         <Image
                         className='XLogo'
-                        src="/images/logo-black.png" 
+                        src="/images/logo-black.png"
                         width={50}
                         height={50}
-                        
+
                         alt='X'/>
                         </a>
                         <a href="https://www.instagram.com/pot4t0_0w0/" className="snsbtn">
                         <Image
                         className='Instagram'
-                        src="/images/IG_Black.png" 
+                        src="/images/IG_Black.png"
                         width={55}
                         height={55}
-                        
+
                         alt='Instagram'/>
                         </a>
                         </div>
@@ -63,10 +63,9 @@ const Footer = () => {
                     <a href="#" className="Top">
                     <Image
                     className='TopButton'
-                    src="/images/top.svg" 
+                    src="/images/top.svg"
                     width={55}
                     height={55}
-                    
                     alt='BackToTop'/>
                     </a>
                 </div>

@@ -32,6 +32,8 @@ export default function HomeJP () {
       <div className='LoadedMain'>
         <div className="picturetitle">
         <Image src="/images/homepic.png"
+        loading='eager'
+        priority
         width={1920}
         height={822}
         layout='responsive'

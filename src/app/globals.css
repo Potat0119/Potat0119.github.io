@@ -397,9 +397,21 @@ li {
   margin-top: 20px;
 }
 
+.Top {
+  width: 55px;
+  height: 55px;
+}
+
 @media screen and (max-width: 1200px) {
   .PageTitle {
-    font-size: 3vw;
+    font-size: 28px;
+    white-space: nowrap;
+    margin-right: 24px;
+  }
+
+  .ENJPChange {
+    font-size: 24px;
+    white-space: nowrap;
   }
 
   .HeaderMenu {
@@ -408,7 +420,7 @@ li {
   }
 
   .HeaderMenuButton {
-    font-size: 32px;
+    font-size: 24px;
   }
 
   .HomeTitle {
@@ -417,6 +429,23 @@ li {
 
   .worktitle {
     font-size: 4.5vw;
+  }
+
+  .DivTitle {
+    font-weight: 500;
+    font-size: 48px;
+  }
+
+  .DivSecondTitle {
+    font-size: 40px;
+  }
+
+  .DivSectionTitle {
+    font-size: 32px;
+  }
+
+  .Divbodytext {
+    font-size: 26px;
   }
 
   .CategoryWrapper {
@@ -435,6 +464,7 @@ li {
     inset: auto auto 2px 4px;
     margin-left: 0;
     width: 34vw;
+    font-size: 28px;
   }
 
   .modal-content {

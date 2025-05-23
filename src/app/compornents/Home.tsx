@@ -46,7 +46,7 @@ export default function Home() {
             <button className="WorkTile" onClick={TextureOpen}>
               <Image
               className='WorkTileImg'
-              src="./images/Tile01.png"
+              src="/images/Tile01.png"
               width={800}
               height={600}
               layout='responsive'

@@ -46,7 +46,7 @@ export default function HomeJP () {
             <button className="WorkTile" onClick={TextureJPOpen}>
               <Image
               className='WorkTileImg'
-              src="/images/Tile01.png" 
+              src="/images/Tile01.png"
               width={800}
               height={600}
               layout='responsive'
@@ -56,7 +56,7 @@ export default function HomeJP () {
             <button className="WorkTile" onClick={ModelJPOpen}>
               <Image
               className='WorkTileImg'
-              src="/images/Tile02.png" 
+              src="/images/Tile02.png"
               width={800}
               height={600}
               layout='responsive'
@@ -66,7 +66,7 @@ export default function HomeJP () {
             <button className="WorkTile" onClick={WebAppJPOpen}>
               <Image
               className='WorkTileImg'
-              src="/images/Tile03.png" 
+              src="/images/Tile03.png"
               width={800}
               height={600}
               layout='responsive'

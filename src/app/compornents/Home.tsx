@@ -83,20 +83,20 @@ export default function Home() {
                   <div className="SkillsCategoryWrapper">
                     <p className="DivSecondTitle">Creative</p>
                     <p className="DivSectionTitle">Adobe Photoshop</p>
-                    <ProgressBar value={90} />
+                    <ProgressBar aria-label='Experienced in Photoshop' value={90} />
                     <p className="DivSectionTitle">Blender</p>
-                    <ProgressBar value={30}/>
+                    <ProgressBar aria-label='Familiar with Blender' value={30}/>
                     <p className="DivSectionTitle">Autodesk Maya</p>
-                    <ProgressBar value={40}/>
+                    <ProgressBar aria-label='Familiar with Maya' value={40}/>
                   </div>
                   <div className="SkillsCategoryWrapper">
                   <p className="DivSecondTitle">Develop</p>
                     <p className="DivSectionTitle">HTML/CSS</p>
-                    <ProgressBar value={70}/>
+                    <ProgressBar aria-label='Proficient in HTML and CSS' value={70}/>
                     <p className="DivSectionTitle">JavaScript</p>
-                    <ProgressBar value={40}/>
+                    <ProgressBar aria-label='Familiar with JavaScript' value={40}/>
                     <p className="DivSectionTitle">Next.js</p>
-                    <ProgressBar value={60}/>
+                    <ProgressBar aria-label='Proficient in NextJS' value={60}/>
 
 
                 </div>

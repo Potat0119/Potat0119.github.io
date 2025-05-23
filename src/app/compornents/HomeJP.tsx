@@ -83,25 +83,24 @@ export default function HomeJP () {
                   <div className="SkillsCategoryWrapper">
                     <p className="DivSecondTitle">Creative</p>
                     <p className="DivSectionTitle">Adobe Photoshop</p>
-                    <ProgressBar value={90} />
+                    <ProgressBar aria-label='フォトショップを使いこなすことができる' value={90} />
                     <p className="DivSectionTitle">Blender</p>
-                    <ProgressBar value={30}/>
+                    <ProgressBar aria-label='Blender初学者' value={30}/>
                     <p className="DivSectionTitle">Autodesk Maya</p>
-                    <ProgressBar value={40}/>
+                    <ProgressBar aria-label='Maya初学者' value={40}/>
                   </div>
                   <div className="SkillsCategoryWrapper">
                   <p className="DivSecondTitle">Develop</p>
                     <p className="DivSectionTitle">HTML/CSS</p>
-                    <ProgressBar value={70}/>
+                    <ProgressBar aria-label='HTML/CSSを実務レベルで使用可能' value={70}/>
                     <p className="DivSectionTitle">JavaScript</p>
-                    <ProgressBar value={40}/>
+                    <ProgressBar aria-label='JavaScriptは少しできる' value={40}/>
                     <p className="DivSectionTitle">Next.js</p>
-                    <ProgressBar value={60}/>
+                    <ProgressBar aria-label='NextJSを実務レベルで使用可能' value={60}/>
 
 
                 </div>
               </div>
-            
         </div>
         <div className="CategoryWrapper">
               <p className="DivTitle" id='about'>ABOUT</p>

@@ -31,9 +31,9 @@ export default function Home() {
     return (
       <div className='LoadedMain'>
         <div className="picturetitle">
-        <Image src="/images/homepic.png" 
-        width={1920} 
-        height={822} 
+        <Image src="/images/homepic.png"
+        width={1920}
+        height={822}
         layout='responsive'
         alt="FF B767"/>
         <div className="overlay"></div>
@@ -46,7 +46,7 @@ export default function Home() {
             <button className="WorkTile" onClick={TextureOpen}>
               <Image
               className='WorkTileImg'
-              src="/images/Tile01.png" 
+              src="/images/Tile01.png"
               width={800}
               height={600}
               layout='responsive'
@@ -56,7 +56,7 @@ export default function Home() {
             <button className="WorkTile" onClick={ModelOpen}>
               <Image
               className='WorkTileImg'
-              src="/images/Tile02.png" 
+              src="/images/Tile02.png"
               width={800}
               height={600}
               layout='responsive'
@@ -66,7 +66,7 @@ export default function Home() {
             <button className="WorkTile" onClick={WebAppOpen}>
               <Image
               className='WorkTileImg'
-              src="/images/Tile03.png" 
+              src="/images/Tile03.png"
               width={800}
               height={600}
               layout='responsive'
@@ -99,13 +99,14 @@ export default function Home() {
 
                 </div>
               </div>
-            
+
         </div>
         <div className="CategoryWrapper">
               <p className="DivTitle" id='about'>ABOUT</p>
-              <p className="DivSecondTitle">REO YOSHIOKA <br />Born in 2003. <br />Currently studying at J.F.Oberlin University. </p>
+              <p className="DivSecondTitle">REO YOSHIOKA <br />Born in 2003.</p>
               <p className="Divbodytext">{`In junior high school, interested in flight simulators, from which started repainting. Creating textures with the motto "closer to reality with natural beauty". Also, this year started modelling to bring flight simulators closer to reality.`}</p>
               <p className="Divbodytext">In Zombie Studio A220 project, responsible for the creation of static objects.</p>
+              <p className="Divbodytext">Completed the ZeroPlus Web Application Course in 2024 and developing web applications.</p>
         </div>
         <TextureModal isOpen={isModalOpen} onClose={TextureClose}></TextureModal>
         <ModelModal isOpen={isModelOpen} onClose={ModelClose}></ModelModal>
@@ -114,4 +115,3 @@ export default function Home() {
     )
   }
 
-  

@@ -43,17 +43,18 @@ li {
   width: 100vw;
   padding-left: 20px;
   padding-right: 20px;
-  height: 78px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #e7e7e7;
   color: #0C0C0D;
   animation: fadein 2s;
+  border-bottom: 4px solid #313638;
 }
 
 .PageTitle {
-  font-size: max(2.5vw, 48px);
+  font-size: max(2.5vw, 44px);
   font-weight: 400;
 }
 
@@ -65,34 +66,43 @@ li {
 .ENJPChange {
   font-size: 24px;
   margin-right: 20px;
-  color: #8d8d8d;
+  color: #666666;
 }
 
 .HeaderMenu {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 21px;
 }
 
 .HeaderMenuButton {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 172px;
-  height: 78px;
-  font-size: 40px;
+  color: #050027;
+  width: fit-content;
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 60px;
+  font-size: 32px;
+  border-bottom: 2px solid #313638;
+}
+
+.HeaderMenuButton:hover {
+  transition: all 0.3s ease;
+  background-color: #313638;
+  color: #fff;
+  border-bottom: 2px solid #fff;
 }
 
 .HeaderMenuButtonTitle {
-  color: #050027;
   text-decoration: none;
 }
 
 
 /* HomePage  */
 .LoadedMain {
-  margin-top: 76px;
+  margin-top: 60px;
   width: 100vw;
   background-color: #fff;
   animation: fadein 2s;

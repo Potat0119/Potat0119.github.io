@@ -31,9 +31,9 @@ export default function HomeJP () {
     return (
       <div className='LoadedMain'>
         <div className="picturetitle">
-        <Image src="/images/homepic.png" 
-        width={1920} 
-        height={822} 
+        <Image src="/images/homepic.png"
+        width={1920}
+        height={822}
         layout='responsive'
         alt="FF B767"/>
         <div className="overlay"></div>
@@ -103,9 +103,10 @@ export default function HomeJP () {
         </div>
         <div className="CategoryWrapper">
               <p className="DivTitle" id='about'>ABOUT</p>
-              <p className="DivSecondTitle">吉岡 伶旺 <br />2003年生まれ。 <br />桜美林大学在学中。</p>
+              <p className="DivSecondTitle">吉岡 伶旺 <br />2003年生まれ。</p>
               <p className="Divbodytext">中学生のときにフライトシミュレーターに興味を持ち、リペイントを始める。「自然な美しさで現実により近く。」をモットーにテクスチャーを作成している。2024年からはモデリングも始め、よりフライトシミュレーターを現実に近づけるため日々努力している。</p>
               <p className="Divbodytext">Zombie Studio A220 Projectでは、静的オブジェクトの作成を担当している。</p>
+              <p className="Divbodytext">2024年にはZeroPlus Webアプリケーションコースを卒業し、Webアプリケーションの作成も行っている。</p>
         </div>
         <TextureModalJP isOpen={isModalOpen} onClose={TextureJPClose}></TextureModalJP>
         <ModelModalJP isOpen={isModelOpen} onClose={ModelJPClose}></ModelModalJP>

@@ -43,7 +43,7 @@ export default function WebAppModal({ isOpen, onClose}: WebAppModalProps) {
               layout='responsive'
               alt='WorkPicture'/>
           <div className="WorkArticleDetails">
-            <p className="ModalWorkTitle">Blue Archive Sensei Tool </p>
+            <p className="ModalWorkTitle">Sensei Tool </p>
             <p className="ModalWorkDetails">Coded and designed Fan site for Blue Archive with HTML/CSS and Next.js.</p>
           </div>
         </article>

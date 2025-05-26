@@ -11,7 +11,7 @@ import HomeJP from "./compornents/HomeJP";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
-  const [content, setContent] = useState<"JPPage" | "ENPage">("ENPage"); 
+  const [content, setContent] = useState<"JPPage" | "ENPage">("ENPage");
 
   function SearchParamsComponent() {
     const searchParams = useSearchParams().get('content');
@@ -22,7 +22,7 @@ export default function App() {
       }
     }, [searchParams]);
 
-    return null; 
+    return null;
   }
 
   const toggleLanguage = () => {

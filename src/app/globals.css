@@ -655,7 +655,7 @@ li {
   
   .WorkArticle:nth-of-type(n+2) {
     display: block;
-    margin-top: 12px;
+    margin-top: 24px;
     text-align: left;
     }
 
@@ -688,8 +688,6 @@ li {
 
   .ModalWorkLink {
     position: absolute;
-    bottom: -48px;
     font-size: 16px;
-    margin-bottom: 24px;
   }
 }

@@ -24,6 +24,13 @@ export default function WebAppModal({ isOpen, onClose}: WebAppModalProps) {
           <h2 className="ModalYear" id="2025">2025</h2>
         </div>
         <article className="WorkArticle">
+          <Image
+              className='ModalArticleImg'
+              src="/images/Web202501.webp"
+              width={1200}
+              height={450}
+              layout='responsive'
+              alt='WorkPicture'/>
           <div className="WorkArticleDetails">
             <p className="ModalWorkTitle">Email Address Search Site</p>
             <p className="ModalWorkDetails">Created an internal email address search web application.

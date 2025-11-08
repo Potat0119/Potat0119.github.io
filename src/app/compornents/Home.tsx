@@ -82,7 +82,7 @@ export default function Home() {
               <div className="SkillsWrapper">
                   <div className="SkillsCategoryWrapper">
                     <p className="DivSecondTitle">Creative</p>
-                    <p className="DivSectionTitle">Adobe Photoshop</p>
+                    <p className="DivSectionTitle">Photoshop</p>
                     <ProgressBar aria-label='Experienced in Photoshop' value={90} />
                     <p className="DivSectionTitle">Blender</p>
                     <ProgressBar aria-label='Familiar with Blender' value={30}/>

@@ -44,7 +44,7 @@ export default function TextureModal({ isOpen, onClose}: TextureModalProps) {
               <li className="UsedSoftware">Adobe Photoshop 2023 for Repaint</li>
               <li className="UsedSoftware">Blender for check UVs</li>
             </ul>
-              <a className="ModalWorkLink" href="https://forums.x-plane.org/index.php?/files/file/92424-nordwind-airlines-vp-bjg-for-flightfactor-b777v2/" target="_blank" rel="noopener noreferrer">Jump to Link</a>
+              <a className="ModalWorkLink" href="https://flightsim.to/file/86499/china-eastern-b-7369" target="_blank" rel="noopener noreferrer">Jump to Link</a>
           </div>
         </article>
         </div>

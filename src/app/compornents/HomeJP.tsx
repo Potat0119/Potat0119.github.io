@@ -82,7 +82,7 @@ export default function HomeJP () {
               <div className="SkillsWrapper">
                   <div className="SkillsCategoryWrapper">
                     <p className="DivSecondTitle">Creative</p>
-                    <p className="DivSectionTitle">Adobe Photoshop</p>
+                    <p className="DivSectionTitle">Photoshop</p>
                     <ProgressBar aria-label='フォトショップを使いこなすことができる' value={90} />
                     <p className="DivSectionTitle">Blender</p>
                     <ProgressBar aria-label='Blender初学者' value={30}/>

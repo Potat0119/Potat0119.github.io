@@ -12,10 +12,12 @@ export default function TextureModalJP({ isOpen, onClose}: TextureModalJPProps) 
   return (
     <div className="modal-overlay">
       <div className="modal-content">
+      <div className="ModalHeader">
         <p className="ModalGuide">Works/Textures</p>
         <button className="modal-close" onClick={onClose}>
           ×CLOSE
         </button>
+        </div>
         <h1 className="ModalTitle">Textures</h1>
         <div className="ModalYearMenu">
           <h2 className="ModalYear" id="2024">2024</h2>

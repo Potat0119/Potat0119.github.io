@@ -12,10 +12,12 @@ export default function ModelModalJP({ isOpen, onClose}: ModelModalJPProps) {
   return (
     <div className="modal-overlay">
       <div className="modal-content">
+      <div className="ModalHeader">
         <p className="ModalGuide">Works/3D Models</p>
         <button className="modal-close" onClick={onClose}>
           ×CLOSE
         </button>
+        </div>
         <h1 className="ModalTitle">3D Models</h1>
         <div className="ModalYearMenu">
           <h2 className="ModalYear" id="2024">2024</h2>

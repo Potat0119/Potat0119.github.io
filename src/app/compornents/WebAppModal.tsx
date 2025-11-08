@@ -12,18 +12,34 @@ export default function WebAppModal({ isOpen, onClose}: WebAppModalProps) {
   return (
     <div className="modal-overlay">
       <div className="modal-content">
+        <div className="ModalHeader">
         <p className="ModalGuide">Works/Web Design and Web Apps</p>
         <button className="modal-close" onClick={onClose}>
           ×CLOSE
         </button>
+        </div>
         <h1 className="ModalTitle">Web Apps</h1>
+        <div className="ModalYearWrapper">
+        <div className="ModalYearMenu">
+          <h2 className="ModalYear" id="2025">2025</h2>
+        </div>
+        <article className="WorkArticle">
+          <div className="WorkArticleDetails">
+            <p className="ModalWorkTitle">Email Address Search Site</p>
+            <p className="ModalWorkDetails">Created an internal email address search web application.
+It enables account control, allowing addition, editing, and deletion.
+Furthermore, CSV export and import are possible for bulk editing.</p>
+          </div>
+        </article>
+        </div>
+        <div className="ModalYearWrapper">
         <div className="ModalYearMenu">
           <h2 className="ModalYear" id="2024">2024</h2>
         </div>
         <article className="WorkArticle">
         <Image
               className='ModalArticleImg'
-              src="/images/Web202401.png" 
+              src="/images/Web202401.png"
               width={1200}
               height={450}
               layout='responsive'
@@ -37,7 +53,7 @@ export default function WebAppModal({ isOpen, onClose}: WebAppModalProps) {
         <article className="WorkArticle">
         <Image
               className='ModalArticleImg'
-              src="/images/Web202402.png" 
+              src="/images/Web202402.png"
               width={1200}
               height={450}
               layout='responsive'
@@ -47,6 +63,7 @@ export default function WebAppModal({ isOpen, onClose}: WebAppModalProps) {
             <p className="ModalWorkDetails">Coded and designed Fan site for Blue Archive with HTML/CSS and Next.js.</p>
           </div>
         </article>
+        </div>
       </div>
     </div>
   );

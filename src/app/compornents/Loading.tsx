@@ -1,52 +1,80 @@
 import * as React from 'react';
-import LinearProgress from '@mui/joy/LinearProgress';
-import Typography from '@mui/joy/Typography';
 import Box from '@mui/joy/Box';
+import Typography from '@mui/joy/Typography';
 
 export default function LoadingScreen() {
   const [progress, setProgress] = React.useState(0);
 
   React.useEffect(() => {
     const timer = setInterval(() => {
-      setProgress((prevProgress) => (prevProgress >= 100 ? 0 : prevProgress + 10));
-    }, 100);
-
-    return () => {
-      clearInterval(timer);
-    };
+      setProgress((p) => {
+        const next = Math.min(p + 20, 100);
+        if (next === 100) clearInterval(timer);
+        return next;
+      });
+    }, 50);
+    return () => clearInterval(timer);
   }, []);
+
+  const textOnDark = '#ffffff';
+  const textOnLight = '#050027';
+  const isCoveredAtCenter = progress >= 100;
+  const labelColor = isCoveredAtCenter ? textOnDark : textOnLight;
+  const labelShadow = isCoveredAtCenter ? '0 0 4px rgba(0,0,0,0.35)' : 'none';
 
   return (
     <Box
       sx={{
         bgcolor: 'white',
         width: '100%',
+        height: '100vh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
       }}
     >
-      <LinearProgress className='LinearProgress'
-        determinate
-        variant="outlined"
-        color="neutral"
-        size="sm"
-        thickness={32}
-        value={progress}
+      <Box
+        role="progressbar"
+        aria-valuemin={0}
+        aria-valuemax={100}
+        aria-valuenow={Math.round(progress)}
+        aria-busy={progress < 100}
         sx={{
-          '--LinearProgress-radius': '0px',
-          '--LinearProgress-progressThickness': '24px',
-          boxShadow: 'sm',
-          borderColor: 'neutral.500',
+          position: 'relative',
+          width: '100%',
+          height: 24,
+          backgroundColor: '#f2f2f2',
+          borderRadius: 0,
+          overflow: 'hidden',
         }}
       >
+        <Box
+          sx={{
+            position: 'absolute',
+            inset: 0,
+            width: `${progress}%`,
+            backgroundColor: '#050027',
+            transition: 'width 0.8s ease-in-out',
+          }}
+        />
         <Typography
           level="body-xs"
           fontWeight="xl"
-          textColor="common.white"
-          sx={{ mixBlendMode: 'difference' }}
+          sx={{
+            position: 'absolute',
+            inset: 0,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            color: labelColor,
+            textShadow: labelShadow,
+            pointerEvents: 'none',
+            userSelect: 'none',
+          }}
         >
           LOADING… {`${Math.round(progress)}%`}
         </Typography>
-      </LinearProgress>
+      </Box>
     </Box>
   );
 }
-

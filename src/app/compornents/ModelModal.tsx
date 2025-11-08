@@ -12,18 +12,21 @@ export default function ModelModal({ isOpen, onClose}: ModelModalProps) {
   return (
     <div className="modal-overlay">
       <div className="modal-content">
+        <div className="ModalHeader">
         <p className="ModalGuide">Works/3D Models</p>
         <button className="modal-close" onClick={onClose}>
           ×CLOSE
         </button>
+        </div>
         <h1 className="ModalTitle">3D Models</h1>
+        <div className="ModalYearWrapper">
         <div className="ModalYearMenu">
           <h2 className="ModalYear" id="2024">2024</h2>
         </div>
         <article className="WorkArticle">
         <Image
               className='ModalArticleImg'
-              src="/images/Model2024p2.png" 
+              src="/images/Model2024p2.png"
               width={1200}
               height={450}
               layout='responsive'
@@ -40,7 +43,7 @@ export default function ModelModal({ isOpen, onClose}: ModelModalProps) {
         <article className="WorkArticle">
         <Image
               className='ModalArticleImg'
-              src="/images/Model2024p1.png" 
+              src="/images/Model2024p1.png"
               width={1200}
               height={450}
               layout='responsive'
@@ -112,6 +115,7 @@ export default function ModelModal({ isOpen, onClose}: ModelModalProps) {
               <a className="ModalWorkLink" href="https://forums.x-plane.org/index.php?/files/file/90734-tat-probe-for-flightfactor-b767/" target="_blank" rel="noopener noreferrer">Jump to Link</a>
           </div>
         </article>
+        </div>
       </div>
     </div>
   );

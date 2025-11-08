@@ -277,18 +277,9 @@ li {
   display: grid;
   grid-template-columns: 2fr 1fr; 
   position: relative;
+  margin-top: 24px;
   gap: 20px;
   margin-right: 0;
-}
-
-.WorkArticle:nth-of-type(n+2) {
-  display: grid;
-  grid-template-columns: 2fr 1fr; 
-  margin-top: 32px;
-  margin-right: 0;
-  padding: 0;
-  gap: 20px;
-
 }
 
 .ModalArticleImg {

@@ -648,6 +648,7 @@ li {
   }
 
   .WorkArticle {
+    display: block;
     margin-top: 12px;
   }
 

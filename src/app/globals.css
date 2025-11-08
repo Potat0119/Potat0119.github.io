@@ -651,12 +651,14 @@ li {
     position: relative;
     margin-top: 12px;
     text-align: left;
+    padding-bottom: 48px;
   }
   
   .WorkArticle:nth-of-type(n+2) {
     display: block;
     margin-top: 24px;
     text-align: left;
+    padding-bottom: 48px;
     }
 
   .Large {
@@ -689,5 +691,6 @@ li {
   .ModalWorkLink {
     position: absolute;
     font-size: 16px;
+    bottom: 12px;
   }
 }
